@@ -1,0 +1,13 @@
+{
+  "name": "jakadi",
+  "description": "Jakadi: the Simon Says easter egg for AI coding assistants.",
+  "owner": {
+    "name": "ke20"
+  },
+  "plugins": [
+    {
+      "name": "jakadi",
+      "source": "./"
+    }
+  ]
+}

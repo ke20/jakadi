@@ -1,0 +1,25 @@
+{
+  "name": "jakadi",
+  "version": "0.1.0",
+  "description": "Simon Says easter egg: some sessions, the AI assistant only obeys orders that start with \"Jacques a dit\" / \"Simon says\" (any language).",
+  "author": {
+    "name": "ke20",
+    "url": "https://github.com/ke20"
+  },
+  "repository": "https://github.com/ke20/jakadi",
+  "license": "MIT",
+  "userConfig": {
+    "chance": {
+      "type": "number",
+      "title": "Activation chance (%)",
+      "description": "Probability, from 0 to 100, that a new interactive session starts with the game on.",
+      "default": 20
+    },
+    "revealAfter": {
+      "type": "number",
+      "title": "Reveal after N traps",
+      "description": "After this many messages without the trigger phrase, Claude explains the prank and how to stop it.",
+      "default": 3
+    }
+  }
+}
