@@ -37,3 +37,5 @@ The game ends for the rest of the conversation when the person clearly asks to s
 | Korean | 시몬 가라사대 | 시몬은 그렇게 말하지 않았어요! |
 
 For another language, use its usual name for the game, or "Simon says" translated literally.
+
+<!-- end of jakadi -->

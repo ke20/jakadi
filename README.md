@@ -62,6 +62,12 @@ Options, in `/config` or in `settings.json` under `pluginConfigs.jakadi.options`
 
 Non-interactive runs (`claude -p`, SDK, CI) are never affected.
 
+To uninstall, run `/plugin uninstall jakadi` at the prompt, or from a shell:
+
+```sh
+claude plugin uninstall jakadi
+```
+
 ### Other assistants (always on)
 
 These tools have no hook to roll a die, so the prank is on in every session until you remove it. Append the rules to the assistant's global instructions file:
@@ -74,7 +80,13 @@ These tools have no hook to roll a die, so the prank is on in every session unti
 | Cursor | Paste `rules/jakadi.md` into **Settings > Rules > User Rules** |
 | Any tool that reads `AGENTS.md` (one repository) | `curl -fsSL https://raw.githubusercontent.com/ke20/jakadi/main/rules/jakadi.md >> AGENTS.md` |
 
-To uninstall, delete the section that starts with `# Jakadi (Simon Says) easter egg` from that file.
+To uninstall, delete the Jakadi block from that file (in Cursor, from **User Rules**):
+
+```markdown
+# Jakadi (Simon Says) easter egg — active
+...
+<!-- end of jakadi -->
+```
 
 ### The skill only (start a game on purpose)
 
@@ -85,6 +97,12 @@ npx skills add ke20/jakadi -g
 ```
 
 Add `-a <agent>` to target one assistant. Then type `/jakadi`, or ask to play "Jacques a dit" / "Simon says".
+
+To uninstall:
+
+```sh
+npx skills remove jakadi -g
+```
 
 ## Prank etiquette
 
